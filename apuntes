@@ -1,0 +1,49 @@
+## Tema: Optimización: hashes, compresión y minificación de archivos
+
+    -Los recursos que se guardan en memoria cache suceden cuando el navegador entra a un sitio por primera vez detecta los recursos y los guarda. 
+      Por ello la siguiente vez sera mucho más rápido porque estarán en memoria
+        
+        *La desventaja esta cuando sacamos una nueva versión, porque tendrán un mismo nombre evitando que se descargue los nuevos cambios, 
+         por lo tanto, el usuario no recibirá los nuevos cambios
+        *Para que no haya conflictos con la cache una vez que tengamos nuestro proyecto en producción es importante darles un hash para cada nueva versión
+
+    -terserwebpack ya viene instalado en webpack 5 pero no es tan personalizable
+
+## Tema: Webpack Alias
+
+Alias ⇒ nos permiten otorgar nombres paths específicos evitando los paths largos
+Para crear un alias debes agregar la siguiente configuración a webpack
+
+ alias forma parte del objeto resolve el cual nos permite configurar la forma en que webpack resolverá los módulos incorporados.
+ En nuestro camino, tenemos dos:
+
+resolve.alias - para crear atajos que optimizan el tiempo de búsqueda e incorporación de módulos (commonJS o ES6)
+resolve.extensions - para darle prioridad en resolución para con las extensiones donde si hay archivos nombrados igualmente, pero con diferentes extensiones, webpack resolverá conforme están listados.
+
+
+## Tema : webpack en modo desarrollo
+
+1. se borra el optimizador ya que en dev no es tan necesario.
+2. despues del output ponemos el modo dev "mode:development"
+
+// se configura el package.json
+
+1. en el script de "dev" colocamos el comando "webpack --config <nombre del archivo webpack de dev>.config.dev.json"
+
+  el comando para modo dev sigue siendo "npm run dev"
+
+
+##Tema : webpack en modo produccion
+
+  Lo unico que se habla de este tema es instalar un plugin para limpiar hashes viejos de
+  esto esta bueno pero se esta volviendo obsoleto, webpack ya tiene un flag que se puede habilitar para limpiar esto.(https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder)
+  al plugin se lo quiere deprecar.(https://github.com/johnagan/clean-webpack-plugin/issues/197)
+
+
+##Tema modo watch
+
+  El modo watch hace que nuestro proyecto se compile de forma automática
+  Es decir que está atento a cambios
+  Para habilitarlo debemos agregar la bandera watch en TRUE en el el archivo de config de webpack
+  o si no se puede hacer al momento de lanzar el comando en la termminal
+

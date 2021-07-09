@@ -1,0 +1,12 @@
+/*
+Es un compilador de JavaScript que agarra el código ECMAScript 2015 en adelante 
+y lo transforma en una versión que todos los navegadores anteriores lo puedan usar
+*/
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}
