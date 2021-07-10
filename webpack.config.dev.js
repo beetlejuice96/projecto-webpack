@@ -5,6 +5,8 @@ const CopyPlugin = require("copy-webpack-plugin"); // sirve para copiar simples 
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
   entry: "./src/index.js", // punto de entrada de la aplicacion
@@ -15,7 +17,7 @@ module.exports = {
     assetModuleFilename: "assets/images/[hash][ext][query]",
   },
   mode: "development",
-  watch: true,
+  devtool: "source-map",
   resolve: {
     extensions: [".js"], // extension de archivos que webpack tiene permitido leer
     alias: {
@@ -81,5 +83,12 @@ module.exports = {
       ],
     }),
     new Dotenv(),
+    new BundleAnalyzerPlugin(),
   ],
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    historyApiFallback: true,
+    port: 3006,
+  },
 };

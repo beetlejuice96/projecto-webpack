@@ -47,3 +47,31 @@ resolve.extensions - para darle prioridad en resolución para con las extensione
   Para habilitarlo debemos agregar la bandera watch en TRUE en el el archivo de config de webpack
   o si no se puede hacer al momento de lanzar el comando en la termminal
 
+## Tema webpack devServer
+
+  -HTML5 History API permite la manipulación de session history del navegador, 
+   es decir las páginas visitadas en el tab o el frame en la cual la página está cargada.
+  -Cuando trabajamos con webpack deseamos ver los cambios en tiempo real en un navegador para esto utilizamos webpack-dev-server
+  -en la configuracion observamos estos nombres:
+      --contentBase ⇒ Le dice al servidor donde tiene que servir el contenido, solo es necesario si quieres servir archivos estáticos
+      --compress ⇒ Habilita la compresión gzip
+      --historyApiFallback ⇒ cuando estas usando HTML5 History API la página index.html sera mostrada en vez de una respuesta 404
+      --port ⇒ es el puerto donde vamos a realizar las peticiones
+
+  -si usamos este modo deberiamos desabilitar la opcion de "watch" ya que por defecto este modo pone a watch en true
+
+##Tema webpack BundleAnalyzer
+
+  -Cuando tenemos un proyecto es buena idea poder revisar su impacto en tamaño por ese motivo webpack nos ofrece un paquete para poder verificar y analizar el tamaño del bundle final.
+
+##Tema webpack devtools
+
+  --Algo particular para poder revisar nuestro codigo es el modo DEVTOOLS que nos hara un mapa para poder ver a forma mas detallada cualquier cosa o problema que podamos tener.
+ 
+    En la configuracion de desarrollo tenemos que agregar abajo del mode el codigo: devtool: 'source-map';
+
+  Y al momento de compilar en DEV podremos ver un nuevo archivo donde vendra tood el codigo que hicimos pero es dificil de entender o de debuggear. 
+  Por eso existen los mapas y al momento de inspeccionar en el apartado de sources ahi podremos ver que google nos da la opcion de ver el mapa y ver parte por parte nuestro codigo.
+
+
+  
