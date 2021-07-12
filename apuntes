@@ -74,4 +74,9 @@ resolve.extensions - para darle prioridad en resolución para con las extensione
   Por eso existen los mapas y al momento de inspeccionar en el apartado de sources ahi podremos ver que google nos da la opcion de ver el mapa y ver parte por parte nuestro codigo.
 
 
-  
+##Configuración de Webpack 5 para React.js
+
+esto se esta realizando en el proyecto que se encuentra en el link : https://github.com/beetlejuice96/ListaRick-Morty
+
+
+##Configuración de plugins y loaders para React
