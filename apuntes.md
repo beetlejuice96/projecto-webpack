@@ -40,7 +40,7 @@ resolve.extensions - para darle prioridad en resolución para con las extensione
   al plugin se lo quiere deprecar.(https://github.com/johnagan/clean-webpack-plugin/issues/197)
 
 
-##Tema modo watch
+## Tema modo watch
 
   El modo watch hace que nuestro proyecto se compile de forma automática
   Es decir que está atento a cambios
@@ -60,11 +60,11 @@ resolve.extensions - para darle prioridad en resolución para con las extensione
 
   -si usamos este modo deberiamos desabilitar la opcion de "watch" ya que por defecto este modo pone a watch en true
 
-##Tema webpack BundleAnalyzer
+## Tema webpack BundleAnalyzer
 
   -Cuando tenemos un proyecto es buena idea poder revisar su impacto en tamaño por ese motivo webpack nos ofrece un paquete para poder verificar y analizar el tamaño del bundle final.
 
-##Tema webpack devtools
+## Tema webpack devtools
 
   --Algo particular para poder revisar nuestro codigo es el modo DEVTOOLS que nos hara un mapa para poder ver a forma mas detallada cualquier cosa o problema que podamos tener.
  
@@ -74,20 +74,20 @@ resolve.extensions - para darle prioridad en resolución para con las extensione
   Por eso existen los mapas y al momento de inspeccionar en el apartado de sources ahi podremos ver que google nos da la opcion de ver el mapa y ver parte por parte nuestro codigo.
 
 
-##Configuración de Webpack 5 para React.js
+## Configuración de Webpack 5 para React.js
 
 esto se esta realizando en el proyecto que se encuentra en el link : https://github.com/beetlejuice96/ListaRick-Morty
 
 
-##Configuración de plugins y loaders para React
+## Configuración de plugins y loaders para React
 
-##Configuracion de webpack para css en React
+## Configuracion de webpack para css en React
 - cambiar style-loader por MiniCssExtractPlugin.loader
 
 
-#Optimización de Webpack para React
+## Optimización de Webpack para React
 
-#deploy
+## deploy
 
 El proyecto que estabamos probando con webpack(https://github.com/beetlejuice96/ListaRick-Morty) lo deployamos en netlify y este es el link https://nifty-pare-f04b7d.netlify.app/
 
