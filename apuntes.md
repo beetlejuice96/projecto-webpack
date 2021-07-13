@@ -87,5 +87,9 @@ esto se esta realizando en el proyecto que se encuentra en el link : https://git
 
 #Optimización de Webpack para React
 
+#deploy
+
+El proyecto que estabamos probando con webpack(https://github.com/beetlejuice96/ListaRick-Morty) lo deployamos en netlify y este es el link https://nifty-pare-f04b7d.netlify.app/
+
 
 
