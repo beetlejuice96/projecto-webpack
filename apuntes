@@ -80,3 +80,12 @@ esto se esta realizando en el proyecto que se encuentra en el link : https://git
 
 
 ##Configuración de plugins y loaders para React
+
+##Configuracion de webpack para css en React
+- cambiar style-loader por MiniCssExtractPlugin.loader
+
+
+#Optimización de Webpack para React
+
+
+
